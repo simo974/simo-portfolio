@@ -2,80 +2,131 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-   <meta name="google-site-verification" content="iBI88-XWs1lLcxKlx7oxVj2SuIXPMfLSgXk5-in2OFY" />
-  <title>Clean & Modern Websites for Small Businesses</title>  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google-site-verification" content="iBI88-XWs1lLcxKlx7oxVj2SuIXPMfLSgXk5-in2OFY" />
+  <title>Clean & Modern Websites for Small Businesses</title>
   <link rel="icon" href="favicon.png" type="image/png">
-<head>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
   <style>
+    :root {
+      --primary: #1E3A8A;       /* Dark blue */
+      --secondary: #3B82F6;     /* Bright blue */
+      --accent: #60A5FA;        /* Lighter blue */
+      --text: #0F172A;          /* Dark text */
+      --background: #F8FAFC;    /* Very light background */
+    }
+
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Open Sans', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
-      color: #222;
+      background: var(--background);
+      color: var(--text);
     }
+
     header {
-      background-color: #222;
+      background-color: var(--primary);
       color: white;
-      padding: 30px 20px;
-      text-align: center;
-      font-size: 2.4rem;
-      font-weight: bold;
-      letter-spacing: 2px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .site-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
     section {
       max-width: 800px;
       margin: 40px auto;
       padding: 0 20px;
     }
+
     h2 {
-      border-bottom: 3px solid #222;
+      border-bottom: 3px solid var(--primary);
       padding-bottom: 10px;
       margin-bottom: 20px;
       font-weight: 700;
       font-size: 1.8rem;
     }
+
     p, li {
       font-size: 1.1rem;
       line-height: 1.6;
     }
+
     ul {
       list-style-type: disc;
       padding-left: 20px;
     }
+
     .contact {
-      background: #222;
+      background: var(--primary);
       color: white;
       padding: 30px 20px;
       text-align: center;
       font-size: 1.2rem;
     }
+
     .contact a {
-      color: #f39c12;
+      color: var(--accent);
       text-decoration: none;
       font-weight: 600;
     }
+
+    .contact a:hover {
+      color: white;
+    }
+
     @media (max-width: 600px) {
       header {
-        font-size: 1.8rem;
-        padding: 20px 10px;
+        flex-direction: column;
+        text-align: center;
       }
+
+      .site-title {
+        font-size: 1.5rem;
+      }
+
       section {
         margin: 30px 10px;
       }
+
       h2 {
         font-size: 1.4rem;
       }
+
       p, li {
         font-size: 1rem;
+      }
+
+      .logo img {
+        height: 30px;
+        margin-bottom: 10px;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    Simo Erroundi
+    <div class="logo">
+      <img src="favicon.png" alt="Logo" />
+      <div class="site-title">Simo Erroundi</div>
+    </div>
   </header>
 
   <section id="intro">
@@ -98,3 +149,4 @@
   </section>
 </body>
 </html>
+
